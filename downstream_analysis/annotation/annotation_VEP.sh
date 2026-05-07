@@ -1,4 +1,7 @@
-cd /path/filtered_VCFs
+#!/usr/bin/env bash
+
+#Annotating filtered VCFs using Ensembl VEP (http://www.ensembl.org/info/docs/tools/vep/index.html)
+docker pull ensemblorg/ensembl-vep
 
 for file in *.gz
 do
